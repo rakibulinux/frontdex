@@ -1,0 +1,10 @@
+@import "./colors/index.scss";
+@import "./fonts.scss";
+
+@import "./components/index.scss";
+
+:root {
+    @each $name, $color in $lightColors {
+        --#{$name}: #{$color};
+    }
+}
